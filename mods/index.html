@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mods - Beebew</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* Navigation */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(15,15,15,0.95);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    z-index:9999;
+}
+
+.logo{
+    color:#ffc400;
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffc400;
+}
+
+/* Header */
+
+header{
+
+    margin-top:70px;
+
+    height:500px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.8)
+    ),
+    /*url("../images/minecraft.png");*/
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+}
+
+.logo-banner{
+    width:700px;
+    max-width:90%;
+}
+
+.subtitle{
+    margin-top:20px;
+    color:white;
+    font-size:1.2rem;
+}
+
+/* Mods */
+
+.mod-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.mod-card{
+    background:#1b1b1b;
+    border-left:5px solid #ffc400;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:25px;
+}
+
+.mod-card h2{
+    color:#ffc400;
+    margin-bottom:15px;
+}
+
+.mod-card p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.mod-btn{
+    display:inline-block;
+    background:#ffc400;
+    color:#111;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+
+/* Footer */
+
+footer{
+    background:#1a1a1a;
+    text-align:center;
+    padding:30px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:10px;
+        gap:15px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">🐝 Beebew</div>
+
+    <ul>
+        <li><a href="../">Accueil</a></li>
+        <li><a href="../lore/">Lore</a></li>
+        <li><a href="../staff/">Staff</a></li>
+        <li><a href="../streamers/">Streamers</a></li>
+        <li><a href="../discord/">Discord</a></li>
+    </ul>
+
+</nav>
+
+<header>
+
+    <div>
+
+        <img
+        src="../images/minecraft.png"
+        alt="Beebew"
+        class="logo-banner">
+
+        <p class="subtitle">
+            Les mods du serveur Beebew
+        </p>
+
+    </div>
+
+</header>
+
+<div class="mods-grid">
+
+    <div class="mod-card">
+    <h2>Artifacts</h2>
+    <p>Ajoute des artefacts rares offrant des capacités et bonus uniques à découvrir.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/artifacts" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>AstikorCarts Redux</h2>
+    <p>Introduit des charrettes et véhicules médiévaux pour transporter ressources et animaux.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/astikor-carts-redux" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Better Foliage Renewed</h2>
+    <p>Améliore la végétation avec des feuilles, herbes et arbres plus immersifs.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/better-foliage-renewed" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Block Pack</h2>
+    <p>Ajoute de nouveaux blocs décoratifs pour enrichir les constructions.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/block-pack" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Butchery</h2>
+    <p>Développe l'élevage et la préparation de viande avec davantage de réalisme.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/butchery" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Corpse</h2>
+    <p>Fait apparaître un corps après la mort afin de récupérer facilement son équipement.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/corpse" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Decorative Fences</h2>
+    <p>Ajoute plusieurs variantes de clôtures décoratives pour embellir les villages.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/decorative-fences" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Decorative Paths</h2>
+    <p>Permet de créer des chemins plus variés et réalistes.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/decorative-paths" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Dynamic Surroundings</h2>
+    <p>Améliore l'ambiance du jeu grâce à des effets sonores et visuels immersifs.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/dynamic-surroundings" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Farmer's Delight</h2>
+    <p>Étend l'agriculture, la cuisine et les métiers liés à l'alimentation.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/farmers-delight" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Farsight</h2>
+    <p>Optimise l'affichage à grande distance pour améliorer les performances.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/farsight" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Just Enough Items (JEI)</h2>
+    <p>Affiche les recettes et utilisations de tous les objets du jeu.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/jei" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Mama's Merrymaking</h2>
+    <p>Ajoute des décorations festives et du contenu saisonnier.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/maidens-merry-making" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Mama's Herbs and Harvest</h2>
+    <p>Ajoute de nouvelles plantes, récoltes et mécaniques agricoles.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/mamas-herbs-and-harvest" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Raids Enhanced</h2>
+    <p>Rend les raids plus difficiles et plus variés.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/raids-enhanced" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Serene Seasons</h2>
+    <p>Introduit les saisons qui influencent l'environnement et les cultures.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/serene-seasons" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Sophisticated Backpacks</h2>
+    <p>Ajoute des sacs améliorables pour augmenter l'espace de stockage.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Sophisticated Storage</h2>
+    <p>Propose des coffres et systèmes de rangement évolués.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/sophisticated-storage" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Structory</h2>
+    <p>Ajoute de nombreuses structures générées naturellement dans le monde.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/structory" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>The Aether</h2>
+    <p>Ajoute une nouvelle dimension céleste remplie de créatures et d'aventures.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/aether" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Tough As Nails</h2>
+    <p>Ajoute des mécaniques de survie comme la température et la soif.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/tough-as-nails" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Towns and Towers</h2>
+    <p>Ajoute de nouveaux villages et structures répartis dans le monde.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/towns-and-towers" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>Waystones</h2>
+    <p>Permet le voyage rapide grâce à des pierres de téléportation.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/waystones" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>YUNG's Better Dungeons</h2>
+    <p>Refonte complète des donjons avec de nouveaux défis à explorer.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/yungs-better-dungeons-neoforge" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>YUNG's Better End Island</h2>
+    <p>Améliore l'île principale de l'End avec une génération plus spectaculaire.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/yungs-better-end-island-neoforge" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>YUNG's Better Nether Fortresses</h2>
+    <p>Refonte des forteresses du Nether avec davantage d'exploration.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/yungs-better-nether-fortresses-neoforge" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>YUNG's Better Strongholds</h2>
+    <p>Transforme les forteresses en immenses complexes à explorer.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/yungs-better-strongholds-neoforge" class="mod-btn">Voir le mod</a>
+    </div>
+    
+    <div class="mod-card">
+    <h2>YUNG's Bridges</h2>
+    <p>Ajoute des ponts générés naturellement à travers le monde.</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/yungs-bridges-neoforge" class="mod-btn">Voir le mod</a>
+    </div>
+
+    <div class="mod-card">
+    <h2>Simple Voice Chat</h2>
+    <p>Un chat vocal de proximité pour Minecraft</p>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat" class="mod-btn">Voir le mod</a>
+    </div>
+
+</div>
+
+<footer>
+
+    © 2026 Beebew - Serveur Minecraft
+
+</footer>
+
+</body>
+</html>

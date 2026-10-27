@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Beebew - Serveur Minecraft</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(15,15,15,0.95);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    z-index:9999;
+}
+
+.logo{
+    color:#ffc400;
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffc400;
+}
+
+.discord-nav{
+    background:#5865F2;
+    padding:10px 18px;
+    border-radius:8px;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+
+    margin-top:70px;
+
+    height:500px;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.80)
+    ),
+    url("images/panorama_overlay.png");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+    
+.hero{
+    width:100%;
+    max-width:900px;
+    padding:20px;
+
+    text-align:center;
+}
+    
+.logo-banner{
+    width:700px;
+    max-width:95%;
+    margin-bottom:30px;
+
+    filter:
+        drop-shadow(0 0 10px #000)
+        drop-shadow(0 0 25px rgba(255,196,0,0.4));
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+
+    text-shadow:
+        3px 3px 0 #000,
+        6px 6px 12px #000;
+}
+
+.hero p{
+
+    font-size:1.3rem;
+    line-height:1.8;
+    max-width:700px;
+
+    margin:auto;
+    margin-bottom:35px;
+
+    text-shadow:
+        2px 2px 8px #000;
+}
+
+.discord-btn{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    background:#5865F2;
+
+    color:white;
+    text-decoration:none;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.discord-btn:hover{
+    transform:scale(1.05);
+}
+
+/* ==========================
+   SECTIONS
+========================== */
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    color:#ffc400;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+
+    background:#1b1b1b;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#ffc400;
+    margin-bottom:15px;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:#1a1a1a;
+    padding:30px;
+    text-align:center;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+        margin-top:10px;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .logo-banner{
+        width:95%;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">🐝 Beebew</div>
+
+    <ul>
+
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="lore/">Lore</a></li>
+        <li><a href="staff/">Staff</a></li>
+        <li><a href="streamers/">Streamers</a></li>
+        <li><a href="mods/">Mods</a></li>
+
+        <li>
+            <a href="https://discord.gg/2EMyeSwqKs"
+               target="_blank"
+               class="discord-nav">
+               Rejoindre
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+<header>
+
+    <div class="hero">
+
+        <img
+        src="images/minecraft.png"
+        alt="Beebew"
+        class="logo-banner">
+
+        <h1>Bienvenue sur Beebew</h1>
+
+        <p>
+            Explore un univers Minecraft unique où
+            l'aventure, la construction, les événements
+            communautaires et la découverte sont au cœur
+            de l'expérience.
+        </p>
+
+        <a
+        href="https://discord.gg/2EMyeSwqKs"
+        target="_blank"
+        class="discord-btn">
+
+            Rejoindre le Discord
+
+        </a>
+
+    </div>
+
+</header>
+
+<section>
+
+    <h2 class="section-title">
+        Pourquoi rejoindre Beebew ?
+    </h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🌍 Exploration</h3>
+            <p>
+                Découvre de nouvelles régions,
+                villages et paysages.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>⚔️ Aventure</h3>
+            <p>
+                Pars à l'aventure seul ou
+                entre amis.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🛠️ Mods</h3>
+            <p>
+                Une expérience Minecraft enrichie
+                grâce à de nombreux mods.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🤝 Communauté</h3>
+            <p>
+                Rejoins une communauté active
+                et conviviale.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2 class="section-title">
+        Informations du serveur
+    </h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📌 Adresse</h3>
+            <p>play.beebew.fr</p>
+        </div>
+
+        <div class="card">
+            <h3>🎮 Version</h3>
+            <p>Minecraft Moddé</p>
+        </div>
+
+        <div class="card">
+            <h3>🐝 Univers</h3>
+            <p>
+                Abeilles, aventure,
+                exploration et communauté.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Beebew - Serveur Minecraft</p>
+
+</footer>
+
+</body>
+</html>

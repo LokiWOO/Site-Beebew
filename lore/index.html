@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lore - Beebew</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+    line-height:1.8;
+}
+
+/* Navigation */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(15,15,15,0.95);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    z-index:9999;
+}
+
+.logo{
+    color:#ffc400;
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffc400;
+}
+
+/* Bannière */
+
+header{
+
+    margin-top:70px;
+
+    height:500px;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.80)
+    ),
+    url("images/banner.webp");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.header-content{
+    text-align:center;
+}
+
+.logo-banner{
+    width:700px;
+    max-width:95%;
+    margin-bottom:30px;
+
+    filter:
+        drop-shadow(0 0 10px #000)
+        drop-shadow(0 0 25px rgba(255,196,0,0.4));
+}
+
+.subtitle{
+    margin-top:20px;
+    font-size:1.3rem;
+    color:white;
+
+    text-shadow:
+        2px 2px 10px black;
+}
+
+header h1{
+    font-size:4rem;
+    color:white;
+    text-shadow:4px 4px 15px black;
+}
+
+/* Sections */
+
+section{
+    padding:60px 10%;
+}
+
+.chapter{
+    background:#1b1b1b;
+    border-left:5px solid #ffc400;
+    padding:35px;
+    border-radius:15px;
+    margin-bottom:40px;
+}
+
+.chapter h2{
+    color:#ffc400;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.chapter p{
+    margin-bottom:15px;
+}
+
+.quote{
+    font-style:italic;
+    color:#ddd;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Fin */
+
+.final{
+    text-align:center;
+    background:#232323;
+    border:2px solid #ffc400;
+}
+
+.final h2{
+    color:#ffc400;
+}
+
+/* Footer */
+
+footer{
+    background:#1a1a1a;
+    padding:30px;
+    text-align:center;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+        margin-top:10px;
+    }
+
+    header h1{
+        font-size:2.5rem;
+    }
+
+    .chapter{
+        padding:25px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">🐝 Beebew</div>
+
+    <ul>
+        <li><a href="../">Accueil</a></li>
+        <li><a href="../staff/">Staff</a></li>
+        <li><a href="../streamers/">Streamers</a></li>
+        <li><a href="../mods/">Mods</a></li>
+        <li><a href="../discord/">Discord</a></li>
+    </ul>
+
+</nav>
+
+<header>
+
+    <div class="header-content">
+
+        <img
+        src="../images/minecraft.png"
+        alt="Beebew"
+        class="logo-banner">
+
+        <p class="subtitle">
+            Les chroniques oubliées du Royaume Rose
+        </p>
+
+    </div>
+
+</header>
+
+<section>
+
+<div class="chapter">
+
+    <h2>📜 Le Royaume Oublié</h2>
+
+    <p class="quote">
+        « Lorsque les derniers feux du Royaume Rose s'éteignirent,
+        personne n'imaginait que les terres survivraient à sa chute. »
+    </p>
+
+    <p>
+        Autrefois, ces contrées formaient un vaste royaume prospère.
+        De grandes cités dominaient les plaines tandis que des villages
+        s'étendaient à perte de vue.
+    </p>
+
+    <p>
+        Les routes traversaient forêts, rivières et montagnes,
+        reliant les peuples sous une même bannière.
+    </p>
+
+    <p>
+        Puis survint la Chute.
+    </p>
+
+    <p>
+        Les guerres, les catastrophes et les conflits divisèrent le royaume.
+        Les cités furent abandonnées, les forteresses tombèrent en ruine
+        et la nature reprit possession des terres.
+    </p>
+
+</div>
+
+<div class="chapter">
+
+    <h2>🌍 Une Terre à Reconquérir</h2>
+
+    <p>
+        Aujourd'hui, le Royaume Rose n'est plus qu'un souvenir.
+    </p>
+
+    <p>
+        Les anciennes capitales ont disparu, les routes sont perdues
+        sous les forêts et les derniers vestiges de cette époque
+        dorment sous la mousse et les ronces.
+    </p>
+
+    <p>
+        Pourtant, tout n'est pas perdu.
+    </p>
+
+    <p>
+        De nouveaux aventuriers arrivent sur ces terres sauvages
+        avec l'espoir de recommencer là où les anciens ont échoué.
+    </p>
+
+</div>
+
+<div class="chapter">
+
+    <h2>🏘️ Les Nouveaux Villages</h2>
+
+    <p>
+        Chaque voyageur qui rejoint le monde apporte sa pierre à l'édifice.
+    </p>
+
+    <p>
+        Certains s'installent dans les plaines fertiles.
+        D'autres préfèrent les montagnes, les forêts profondes
+        ou les rives des océans.
+    </p>
+
+    <p>
+        Peu à peu, de nouveaux villages voient le jour.
+    </p>
+
+    <p>
+        Chacun possède son identité, son architecture,
+        ses projets et ses ambitions.
+    </p>
+
+    <p>
+        Peut-être que ces villages deviendront un jour
+        les futures cités d'un nouveau royaume.
+    </p>
+
+</div>
+
+<div class="chapter">
+
+    <h2>🔥 Les Flammes du Nether</h2>
+
+    <p>
+        Sous le monde connu s'étend une dimension hostile
+        où règnent le feu et la lave.
+    </p>
+
+    <p>
+        Les chroniqueurs du Royaume Rose mentionnaient déjà
+        des explorations dans le Nether bien avant la chute
+        du royaume.
+    </p>
+
+    <p>
+        Les anciennes forteresses y subsistent encore,
+        gardant des trésors et des secrets oubliés.
+    </p>
+
+    <p>
+        Nombreux sont ceux qui s'y aventurent.
+        Peu reviennent sans cicatrices.
+    </p>
+
+</div>
+
+<div class="chapter">
+
+    <h2>👁️ Les Mystères de l'End</h2>
+
+    <p>
+        Au-delà du monde et du Nether existe une dimension
+        dont les récits les plus anciens parlent avec crainte.
+    </p>
+
+    <p>
+        L'End reste un mystère.
+    </p>
+
+    <p>
+        Les érudits du Royaume Rose recherchaient autrefois
+        les secrets de cet étrange royaume flottant.
+    </p>
+
+    <p>
+        Leurs recherches cessèrent brutalement et leurs découvertes
+        furent perdues avec la disparition du royaume.
+    </p>
+
+    <p>
+        Aujourd'hui encore, les aventuriers cherchent les portails
+        oubliés capables de mener vers cette dimension légendaire.
+    </p>
+
+</div>
+
+<div class="chapter final">
+
+    <h2>⚔️ Votre Histoire Commence Ici</h2>
+
+    <p>
+        Le Royaume Rose est tombé.
+    </p>
+
+    <p>
+        Ses cités sont en ruine.
+        Sa reine a disparu.
+        Ses secrets attendent d'être découverts.
+    </p>
+
+    <p>
+        Explorez les terres sauvages.
+        Construisez votre village.
+        Développez votre communauté.
+        Affrontez les dangers du Nether.
+        Découvrez les mystères de l'End.
+    </p>
+
+    <p>
+        Et écrivez à votre tour une nouvelle page de l'histoire de Beebew.
+    </p>
+
+</div>
+
+</section>
+
+<footer>
+
+    © 2026 Beebew - Serveur Minecraft
+
+</footer>
+
+</body>
+</html>
